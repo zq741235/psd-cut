@@ -1,0 +1,83 @@
+.float-block {
+  position: relative; }
+  .float-block .float-np-tree {
+    position: absolute;
+    display: inline-block;
+    top: 39px;
+    left: 7px;
+    width: 628px;
+    height: 625px;
+    background: url("./np-tree.png") no-repeat center;
+    background-size: 100%; }
+  .float-block .float-np-mxq_1000 {
+    position: absolute;
+    display: inline-block;
+    top: 365px;
+    left: 464px;
+    width: 146px;
+    height: 166px;
+    background: url("./np-mxq_1000.png") no-repeat center;
+    background-size: 100%; }
+  .float-block .float-np-mxq_6000 {
+    position: absolute;
+    display: inline-block;
+    top: 0px;
+    left: 221px;
+    width: 175px;
+    height: 157px;
+    background: url("./np-mxq_6000.png") no-repeat center;
+    background-size: 100%; }
+  .float-block .float-np-mxq_2000 {
+    position: absolute;
+    display: inline-block;
+    top: 264px;
+    left: 141px;
+    width: 160px;
+    height: 103px;
+    background: url("./np-mxq_2000.png") no-repeat center;
+    background-size: 100%; }
+  .float-block .float-np-mxq_3000 {
+    position: absolute;
+    display: inline-block;
+    top: 192px;
+    left: 450px;
+    width: 171px;
+    height: 136px;
+    background: url("./np-mxq_3000.png") no-repeat center;
+    background-size: 100%; }
+  .float-block .float-np-mxq_500 {
+    position: absolute;
+    display: inline-block;
+    top: 442px;
+    left: 106px;
+    width: 170px;
+    height: 142px;
+    background: url("./np-mxq_500.png") no-repeat center;
+    background-size: 100%; }
+  .float-block .float-np-iphone7 {
+    position: absolute;
+    display: inline-block;
+    top: 55px;
+    left: 383px;
+    width: 139px;
+    height: 172px;
+    background: url("./np-iphone7 .png") no-repeat center;
+    background-size: 100%; }
+  .float-block .float-np-ipad {
+    position: absolute;
+    display: inline-block;
+    top: 103px;
+    left: 37px;
+    width: 139px;
+    height: 142px;
+    background: url("./np-ipad.png") no-repeat center;
+    background-size: 100%; }
+  .float-block .float-np-huafei {
+    position: absolute;
+    display: inline-block;
+    top: 371px;
+    left: 0px;
+    width: 148px;
+    height: 141px;
+    background: url("./np-huafei.png") no-repeat center;
+    background-size: 100%; }

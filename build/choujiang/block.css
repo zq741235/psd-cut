@@ -1,0 +1,92 @@
+.float-block {
+  position: relative; }
+  .float-block .float-np-btn {
+    position: absolute;
+    display: inline-block;
+    top: 203px;
+    left: 201px;
+    width: 199px;
+    height: 199px;
+    background: url("./np-btn.png") no-repeat center;
+    background-size: 100%; }
+  .float-block .float-np-3 {
+    position: absolute;
+    display: inline-block;
+    top: 223px;
+    left: 410px;
+    width: 165px;
+    height: 165px;
+    background: url("./np-3.png") no-repeat center;
+    background-size: 100%; }
+  .float-block .float-np-7 {
+    position: absolute;
+    display: inline-block;
+    top: 223px;
+    left: 25px;
+    width: 165px;
+    height: 165px;
+    background: url("./np-7.png") no-repeat center;
+    background-size: 100%; }
+  .float-block .float-np-0 {
+    position: absolute;
+    display: inline-block;
+    top: 18px;
+    left: 25px;
+    width: 165px;
+    height: 165px;
+    background: url("./np-0.png") no-repeat center;
+    background-size: 100%; }
+  .float-block .float-np-4 {
+    position: absolute;
+    display: inline-block;
+    top: 419px;
+    left: 410px;
+    width: 165px;
+    height: 165px;
+    background: url("./np-4.png") no-repeat center;
+    background-size: 100%; }
+  .float-block .float-np-5 {
+    position: absolute;
+    display: inline-block;
+    top: 419px;
+    left: 218px;
+    width: 165px;
+    height: 165px;
+    background: url("./np-5.png") no-repeat center;
+    background-size: 100%; }
+  .float-block .float-np-2 {
+    position: absolute;
+    display: inline-block;
+    top: 18px;
+    left: 410px;
+    width: 165px;
+    height: 165px;
+    background: url("./np-2.png") no-repeat center;
+    background-size: 100%; }
+  .float-block .float-np-6 {
+    position: absolute;
+    display: inline-block;
+    top: 419px;
+    left: 25px;
+    width: 165px;
+    height: 165px;
+    background: url("./np-6.png") no-repeat center;
+    background-size: 100%; }
+  .float-block .float-np-1 {
+    position: absolute;
+    display: inline-block;
+    top: 18px;
+    left: 218px;
+    width: 165px;
+    height: 165px;
+    background: url("./np-1.png") no-repeat center;
+    background-size: 100%; }
+  .float-block .float-np-bg {
+    position: absolute;
+    display: inline-block;
+    top: 0px;
+    left: 0px;
+    width: 600px;
+    height: 601px;
+    background: url("./np-bg.png") no-repeat center;
+    background-size: 100%; }

@@ -1,0 +1,66 @@
+ 
+@mixin floatElement($top, $left, $width, $height, $imgName) {
+    position: absolute;
+    display:inline-block;
+    top: $top + px;
+    left: $left + px;
+    width: $width + px;
+    height: $height + px;
+    background: url($imgName) no-repeat center;
+    background-size: 100%;
+}
+ 
+.float-block {
+	position : relative ;
+
+	.float-np-btn{
+	    @include floatElement(203 ,201, 199 , 199, './np-btn.png' );
+	}
+  
+
+	.float-np-3{
+	    @include floatElement(223 ,410, 165 , 165, './np-3.png' );
+	}
+  
+
+	.float-np-7{
+	    @include floatElement(223 ,25, 165 , 165, './np-7.png' );
+	}
+  
+
+	.float-np-0{
+	    @include floatElement(18 ,25, 165 , 165, './np-0.png' );
+	}
+  
+
+	.float-np-4{
+	    @include floatElement(419 ,410, 165 , 165, './np-4.png' );
+	}
+  
+
+	.float-np-5{
+	    @include floatElement(419 ,218, 165 , 165, './np-5.png' );
+	}
+  
+
+	.float-np-2{
+	    @include floatElement(18 ,410, 165 , 165, './np-2.png' );
+	}
+  
+
+	.float-np-6{
+	    @include floatElement(419 ,25, 165 , 165, './np-6.png' );
+	}
+  
+
+	.float-np-1{
+	    @include floatElement(18 ,218, 165 , 165, './np-1.png' );
+	}
+  
+
+	.float-np-bg{
+	    @include floatElement(0 ,0, 600 , 601, './np-bg.png' );
+	}
+  
+ }
+

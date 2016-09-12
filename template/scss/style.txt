@@ -1,0 +1,22 @@
+ 
+@mixin floatElement($top, $left, $width, $height, $imgName) {
+    position: absolute;
+    display:inline-block;
+    top: px2rem($top);
+    left: px2rem($left);
+    width: px2rem($width);
+    height: px2rem($height);
+    background: url($imgpath + $imgName) no-repeat center;
+    background-size: 100%;
+}
+ 
+.float-block {
+	position : relative ;
+	{{#block-list}}
+
+	.float-{{prefix}}-{{name}}{
+	    @include floatElement({{top}} ,{{left}}, {{width}} , {{height}}, '/{{prefix}}-{{name}}.png' );
+	}
+
+	{{/block-list}} 
+ }

@@ -1,0 +1,7 @@
+ 
+ 
+ <div class="float-block">
+	{{#block-list}}
+	<span class="float-{{prefix}}-{{name}}"></span>
+	{{/block-list}}
+</div>

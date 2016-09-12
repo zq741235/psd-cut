@@ -1,0 +1,61 @@
+ 
+@mixin floatElement($top, $left, $width, $height, $imgName) {
+    position: absolute;
+    display:inline-block;
+    top: $top + px;
+    left: $left + px;
+    width: $width + px;
+    height: $height + px;
+    background: url($imgName) no-repeat center;
+    background-size: 100%;
+}
+ 
+.float-block {
+	position : relative ;
+
+	.float-np-tree{
+	    @include floatElement(39 ,7, 628 , 625, './np-tree.png' );
+	}
+  
+
+	.float-np-mxq_1000{
+	    @include floatElement(365 ,464, 146 , 166, './np-mxq_1000.png' );
+	}
+  
+
+	.float-np-mxq_6000{
+	    @include floatElement(0 ,221, 175 , 157, './np-mxq_6000.png' );
+	}
+  
+
+	.float-np-mxq_2000{
+	    @include floatElement(264 ,141, 160 , 103, './np-mxq_2000.png' );
+	}
+  
+
+	.float-np-mxq_3000{
+	    @include floatElement(192 ,450, 171 , 136, './np-mxq_3000.png' );
+	}
+  
+
+	.float-np-mxq_500{
+	    @include floatElement(442 ,106, 170 , 142, './np-mxq_500.png' );
+	}
+  
+
+	.float-np-iphone7 {
+	    @include floatElement(55 ,383, 139 , 172, './np-iphone7 .png' );
+	}
+  
+
+	.float-np-ipad{
+	    @include floatElement(103 ,37, 139 , 142, './np-ipad.png' );
+	}
+  
+
+	.float-np-huafei{
+	    @include floatElement(371 ,0, 148 , 141, './np-huafei.png' );
+	}
+  
+ }
+
