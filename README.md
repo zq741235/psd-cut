@@ -10,6 +10,8 @@ psd-cut 并不是完全自动化，它会把PSD图层一个个切出来，因为
 
 接下来试试吧：
 
+将目录下载到本地 或者 `npm install psd-cut` 然后 `cd psd-cut`
+
 ##安装依赖包 
 	npm install
 ## example 
