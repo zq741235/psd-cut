@@ -1,6 +1,6 @@
 {
   "name": "psd-cut",
-  "version": "1.0.0",
+  "version": "1.0.1",
   "description": "解放双手，自动切图",
   "author": "周青<448340778@qq.com>",
   "main": "index.js",
