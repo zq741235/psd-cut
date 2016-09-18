@@ -44,13 +44,15 @@ var sass = require('gulp-sass');//为了编译sass, 不需要的话可以不引
 
  var cssList = [],
 
-     prefix = config.prefix,
+     prefix = config.prefix ,
 
-     cssTPL = fs.readFileSync(config.tpl.css).toString(),
+     nameType = config.nameType ,
 
-     htmlTPL = fs.readFileSync(config.tpl.html).toString(),
+     cssTPL = fs.readFileSync(config.tpl.css).toString() ,
 
-     outpath = config.outpath;
+     htmlTPL = fs.readFileSync(config.tpl.html).toString() ,
+
+     outpath = config.outpath ;
 
   fs.existsSync(outpath) || fs.mkdirSync(outpath);
 
@@ -73,22 +75,23 @@ var sass = require('gulp-sass');//为了编译sass, 不需要的话可以不引
      fs.existsSync(path) || fs.mkdirSync(path);
      fs.existsSync(imgPath) || fs.mkdirSync(imgPath);
 
-     PSD.open(file).then(function(psd) {
-
-         psd.tree().descendants().forEach(function(node, i) {
+     PSD.open(file).then(function(psd) {  
+         psd.tree().descendants().forEach(function(node, i) { 
              if (node.isGroup()) {
                  return true;
              }
-             if (node.visible()) {
+             if (node.visible()) {  
 
-                 cssList.push({
+                node.name = nameType === 'index'? i : node.name ;
+                
+                cssList.push({
                      "prefix": prefix,
-                     "name": node.get("name"),
+                     "name": node.name,
                      "top": node.get("top"),
                      "left": node.get("left"),
                      "width": node.get("width"),
                      "height": node.get("height")
-                 });
+                });
 
 
                  node.saveAsPng(imgPath + "/" + prefix + '-' + node.name + ".png").catch(function(err) {
@@ -106,10 +109,11 @@ var sass = require('gulp-sass');//为了编译sass, 不需要的话可以不引
          fs.writeFile(path + '/block.scss', Mustache.render(cssTPL, blockJSON) ,(err) => {
            if (err) throw err; 
             console.log('样式生成完毕！' + ((new Date()) - start) + "ms");
-
+            //sass to css
             gulp.src(path + '/block.scss')
             .pipe(sass().on('error', sass.logError))
             .pipe(gulp.dest(path));
+
 
          });
         
